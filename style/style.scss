@@ -1,0 +1,239 @@
+// <weight>: Use a value from 200 to 800
+// значения в em привязаны к основному шрифту размер по умолчанию 16px;
+
+@font-face {
+    font-family: 'Bookerly Regular';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Bookerly Regular'), url("./bookerly-font/Bookerly.woff") format('woff');
+}
+
+$maxWidth: 1366px;
+$darkBlue: rgba(26, 18, 59, 1);
+$whiteText: rgba(255, 255, 255, 1);
+$darkText: rgba(9, 6, 19, 1);
+
+$imgNumber: 4;
+
+@mixin heading-fontStyle {
+    color: $darkText;
+    font-family: 'Bookerly Regular';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.75em;
+}
+
+@mixin list-style {
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin nav {
+    height: 4em;
+    display: flex;
+    align-items: center;
+}
+@mixin border {
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+}
+
+@mixin newsOfmembers__item {
+    color:$whiteText;
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    .newsOfMembers__text{
+        padding-bottom: 0.5em;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal;
+    background: rgba(227, 227, 227, 1);
+
+}
+
+.container {
+    max-width: $maxWidth;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    top: 7px;
+    //left: 50%;
+    //margin-right: -50%;
+    width: 77em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    &__list{
+        display: flex;
+        //justify-content: space-between;
+        list-style-type: none;
+        color:rgba(255, 255, 255, 1);
+    }
+}
+.section{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.main__background {
+    position: relative;
+    z-index: -2;
+    background-image: url(../img/bg.png);
+    background-size:100% ;
+    background-repeat: no-repeat;    
+}
+.underline{
+    background-color: $darkText;
+    height: 0.375em;
+}
+.news {
+    padding-top: 9.75em;
+    padding-bottom: 9.75em;
+    &__heading--right{
+        @include heading-fontStyle;
+        text-align: center;
+    }
+    &__position {
+        padding-top: 3.75em;
+        padding-bottom: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .newsItem {
+            width: 350px;
+            height: 402px;
+            padding: 0px 0px 6px 0px;
+            gap: 0px;
+            opacity: 0px;
+            &__img{
+                padding-bottom: 0.875em;
+            }
+            &__heading{
+                padding-bottom: 0.5em;
+            }
+            &__date{
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+    &__button{
+        width: 100%;
+        text-align: center;
+        color: $whiteText;
+        font-size: 18px;
+        background-color: $darkBlue;
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+    }
+}
+.newsOfMembers__position{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3.75em;
+}
+.newsOfMembers__item1{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 4.jpg);    
+}
+.newsOfMembers__item2{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 5.jpg);    
+}
+.newsOfMembers__item3{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 6.jpg);    
+}
+.newsOfMembers__item4{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 7.jpg);    
+}
+.newsOfMembers__item5{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 8.jpg);    
+}
+.newsOfMembers__item6{
+    @include newsOfmembers__item;
+    background-image: url(../img/layer.png), url(../img/Rectangle\ 9.jpg);    
+}
+
+.majorRenovation{
+    padding-top: 9.75em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 9.75em;
+    &__img--upper{
+        align-self: flex-end;
+        padding-bottom: 5em;
+    }
+    &__bgSquare{
+        background-color: rgba(26, 18, 59, 1);
+        width: 61.4em;
+        height: 28.875em;
+        position: absolute;
+        right: 0;
+        margin-top: 18.5em;
+        z-index: -1;
+    }
+    &__img--left{
+        position: absolute;
+        left: 0;
+        margin-top: 28.8em;
+        max-width: 577px;
+        max-height: 593px;
+    }
+      
+    &__info{
+        display: flex;
+        flex-direction: column;
+        width: 39.7em;
+        align-self: flex-end;
+        &--headingRight{
+            @include heading-fontStyle;
+            color: $whiteText;
+        }
+        .underline{
+            background-color: $whiteText;
+        }         
+        &--text{
+            margin-top: 3.75em;
+            margin-bottom: 3em;
+        }
+        &--button{
+            width: 100%;
+            padding-top: 1.3em;
+            padding-bottom: 1.3em;
+            text-align: center;
+            color: $whiteText;
+            background-color: $darkBlue;
+        }
+    }
+}

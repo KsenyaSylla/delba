@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "Bookerly Regular";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bookerly Regular"), url("./bookerly-font/Bookerly.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: rgb(227, 227, 227);
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 7px;
+  width: 77em;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+
+.section {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main__background {
+  position: relative;
+  z-index: -2;
+  background-image: url(../img/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.underline {
+  background-color: rgb(9, 6, 19);
+  height: 0.375em;
+}
+
+.news {
+  padding-top: 9.75em;
+  padding-bottom: 9.75em;
+}
+.news__heading--right {
+  color: rgb(9, 6, 19);
+  font-family: "Bookerly Regular";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75em;
+  text-align: center;
+}
+.news__position {
+  padding-top: 3.75em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news__position .newsItem {
+  width: 350px;
+  height: 402px;
+  padding: 0px 0px 6px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+.news__position .newsItem__img {
+  padding-bottom: 0.875em;
+}
+.news__position .newsItem__heading {
+  padding-bottom: 0.5em;
+}
+.news__position .newsItem__date {
+  padding-bottom: 0.5em;
+}
+.news__button {
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background-color: rgb(26, 18, 59);
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.newsOfMembers__position {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3.75em;
+}
+
+.newsOfMembers__item1 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 4.jpg);
+}
+.newsOfMembers__item1 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.newsOfMembers__item2 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 5.jpg);
+}
+.newsOfMembers__item2 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.newsOfMembers__item3 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 6.jpg);
+}
+.newsOfMembers__item3 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.newsOfMembers__item4 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 7.jpg);
+}
+.newsOfMembers__item4 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.newsOfMembers__item5 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 8.jpg);
+}
+.newsOfMembers__item5 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.newsOfMembers__item6 {
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/layer.png), url(../img/Rectangle\ 9.jpg);
+}
+.newsOfMembers__item6 .newsOfMembers__text {
+  padding-bottom: 0.5em;
+}
+
+.majorRenovation {
+  padding-top: 9.75em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9.75em;
+}
+.majorRenovation__img--upper {
+  align-self: flex-end;
+  padding-bottom: 5em;
+}
+.majorRenovation__bgSquare {
+  background-color: rgb(26, 18, 59);
+  width: 61.4em;
+  height: 28.875em;
+  position: absolute;
+  right: 0;
+  margin-top: 18.5em;
+  z-index: -1;
+}
+.majorRenovation__img--left {
+  position: absolute;
+  left: 0;
+  margin-top: 28.8em;
+  max-width: 577px;
+  max-height: 593px;
+}
+.majorRenovation__info {
+  display: flex;
+  flex-direction: column;
+  width: 39.7em;
+  align-self: flex-end;
+}
+.majorRenovation__info--headingRight {
+  color: rgb(9, 6, 19);
+  font-family: "Bookerly Regular";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75em;
+  color: rgb(255, 255, 255);
+}
+.majorRenovation__info .underline {
+  background-color: rgb(255, 255, 255);
+}
+.majorRenovation__info--text {
+  margin-top: 3.75em;
+  margin-bottom: 3em;
+}
+.majorRenovation__info--button {
+  width: 100%;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 18, 59);
+}/*# sourceMappingURL=style.css.map */
